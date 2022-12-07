@@ -5,9 +5,52 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:_8086_Emulator.MVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
-             Background="#1B1B1B">
-    <Grid>
-            
-    </Grid>
+             d:DesignHeight="525" d:DesignWidth="720"
+             Background="White" Loaded="UserControl_Loaded">
+    <StackPanel>
+        <TextBlock Text="MOV"
+                   Foreground="Black"
+                   FontSize="48"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+        <Grid Height="366">
+            <StackPanel Margin="55,0,465,116"
+                        Width="200">
+                <Label Content="From" Width="200" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="20"/>
+                <RadioButton x:Name="AX2_btn" Content="AX" Checked="AX2_btn_Checked"/>
+                <RadioButton x:Name="BX2_btn" Content="BX"/>
+                <RadioButton x:Name="CX2_btn" Content="CX"/>
+                <RadioButton x:Name="DX2_btn" Content="DX"/>
+            </StackPanel>
+            <StackPanel Margin="260,0,260,116"
+                        Width="200">
+                <Label Content="TO" Width="200" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="20"/>
+                <RadioButton x:Name="AX1_btn" Content="AX" Checked="AX1_btn_Checked"/>
+                <RadioButton x:Name="BX1_btn" Content="BX"/>
+                <RadioButton x:Name="CX1_btn" Content="CX"/>
+                <RadioButton x:Name="DX1_btn" Content="DX"/>
+            </StackPanel>
+            <Button x:Name="exec_btn" Content="Execute" HorizontalAlignment="Center" Margin="0,255,0,0" VerticalAlignment="Top" Click="exec_btn_Click_1"/>
+            <Button x:Name="button1" Content="Reset" HorizontalAlignment="Center" Margin="0,280,0,0" VerticalAlignment="Top" Click="button1_Click_1"/>
+            <StackPanel Margin="460,0,60,116"
+                        Width="200">
+                <Label Content="Value" Width="200" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="20"/>
+                <Grid Height="213">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="111*"/>
+                        <ColumnDefinition Width="89*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="AX" HorizontalAlignment="Left" Margin="20,39,0,0" VerticalAlignment="Top"/>
+                    <Label Content="BX" HorizontalAlignment="Left" Margin="20,70,0,0" VerticalAlignment="Top"/>
+                    <Label Content="CX" HorizontalAlignment="Left" Margin="20,101,0,0" VerticalAlignment="Top"/>
+                    <Label Content="DX" HorizontalAlignment="Left" Margin="20,132,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="ax_value_box" HorizontalAlignment="Left" Margin="63,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2" LostFocus="ax_value_box_LostFocus"/>
+                    <TextBox x:Name="bx_value_box" HorizontalAlignment="Left" Margin="63,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="cx_value_box" HorizontalAlignment="Left" Margin="63,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="dx_value_box" HorizontalAlignment="Left" Margin="63,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+
+    </StackPanel>
 </UserControl>
