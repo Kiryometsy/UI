@@ -18,17 +18,17 @@
                         Width="200">
                 <Label Content="From" Width="200" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="20"/>
                 <RadioButton x:Name="AX2_btn" Content="AX" Checked="AX2_btn_Checked"/>
-                <RadioButton x:Name="BX2_btn" Content="BX"/>
-                <RadioButton x:Name="CX2_btn" Content="CX"/>
-                <RadioButton x:Name="DX2_btn" Content="DX"/>
+                <RadioButton x:Name="BX2_btn" Content="BX" Checked="BX2_btn_Checked"/>
+                <RadioButton x:Name="CX2_btn" Content="CX" Checked="CX2_btn_Checked"/>
+                <RadioButton x:Name="DX2_btn" Content="DX" Checked="DX2_btn_Checked"/>
             </StackPanel>
             <StackPanel Margin="260,0,260,116"
                         Width="200">
                 <Label Content="TO" Width="200" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="20"/>
                 <RadioButton x:Name="AX1_btn" Content="AX" Checked="AX1_btn_Checked"/>
-                <RadioButton x:Name="BX1_btn" Content="BX"/>
-                <RadioButton x:Name="CX1_btn" Content="CX"/>
-                <RadioButton x:Name="DX1_btn" Content="DX"/>
+                <RadioButton x:Name="BX1_btn" Content="BX" Checked="BX1_btn_Checked"/>
+                <RadioButton x:Name="CX1_btn" Content="CX" Checked="CX1_btn_Checked"/>
+                <RadioButton x:Name="DX1_btn" Content="DX" Checked="DX1_btn_Checked"/>
             </StackPanel>
             <Button x:Name="exec_btn" Content="Execute" HorizontalAlignment="Center" Margin="0,255,0,0" VerticalAlignment="Top" Click="exec_btn_Click_1"/>
             <Button x:Name="button1" Content="Reset" HorizontalAlignment="Center" Margin="0,280,0,0" VerticalAlignment="Top" Click="button1_Click_1"/>
@@ -45,9 +45,9 @@
                     <Label Content="CX" HorizontalAlignment="Left" Margin="20,101,0,0" VerticalAlignment="Top"/>
                     <Label Content="DX" HorizontalAlignment="Left" Margin="20,132,0,0" VerticalAlignment="Top"/>
                     <TextBox x:Name="ax_value_box" HorizontalAlignment="Left" Margin="63,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2" LostFocus="ax_value_box_LostFocus"/>
-                    <TextBox x:Name="bx_value_box" HorizontalAlignment="Left" Margin="63,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2"/>
-                    <TextBox x:Name="cx_value_box" HorizontalAlignment="Left" Margin="63,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2"/>
-                    <TextBox x:Name="dx_value_box" HorizontalAlignment="Left" Margin="63,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="bx_value_box" HorizontalAlignment="Left" Margin="63,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2" LostFocus="bx_value_box_LostFocus"/>
+                    <TextBox x:Name="cx_value_box" HorizontalAlignment="Left" Margin="63,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2" LostFocus="cx_value_box_LostFocus"/>
+                    <TextBox x:Name="dx_value_box" HorizontalAlignment="Left" Margin="63,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2" LostFocus="dx_value_box_LostFocus"/>
                 </Grid>
             </StackPanel>
         </Grid>
