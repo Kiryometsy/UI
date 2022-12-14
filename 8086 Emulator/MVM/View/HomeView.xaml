@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="460" d:DesignWidth="800">
     <StackPanel>
-        <TextBlock Text="Discover"
+        <TextBlock Text="8086"
                    Foreground="White"
                    FontSize="28"
                    HorizontalAlignment="Left"
@@ -33,33 +33,17 @@
 
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="World leader&#x0a;in global finance"
+                        <TextBlock Text="Intel 8086"
                                    Foreground="White"
                                    FontSize="28"
                                    Margin="20,10,10,0"/>
 
-                        <TextBlock Text="Get started today!"
+                        <TextBlock Text="Intel 8086 stał się pierwszym elementem rodziny x86 oraz pierwszym 16-bitowym procesorem Intela z 20-bitową szyną adresową."
                                    Foreground="White"
                                    FontSize="18"
-                                   Margin="20,10,10,0"/>
+                                   Margin="20,10,10,0" Height="101" TextWrapping="Wrap"/>
                     </StackPanel>
 
-                    <Image Width="250"
-                           Height="250"
-                           Source="/Images/man.jpg"
-                           HorizontalAlignment="Right"
-                           VerticalAlignment="Bottom"
-                           Margin="0,0,-99,-76"
-                           RenderTransformOrigin="0.5,0.5">
-                        <Image.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="-15.169"/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </Image.RenderTransform>
-                    </Image>
                 </Grid>
             </Border>
 
@@ -74,6 +58,10 @@
                         <GradientStop Color="#ffb73a" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
+
+                <Image Source="/Images/8086.png">
+                    
+                </Image>
 
             </Border>
         </StackPanel>

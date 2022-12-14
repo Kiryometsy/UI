@@ -7,10 +7,14 @@ namespace _8086_Emulator.MVM.ViewModel
     {
 
         public RelayCommand HomeViewCommand { get; set; }
-        public RelayCommand DiscoveryViewCommand { get; set; }
+        public RelayCommand MovViewCommand { get; set; }
+
+        public RelayCommand XchgViewCommand { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
-        public DiscoveryViewModel DiscoveryVM { get; set; }
+        public MovViewModel MovVM { get; set; }
+
+        public XchgViewModel XchgVM { get; set; }
         
         private object _currentView;
 
@@ -27,7 +31,8 @@ namespace _8086_Emulator.MVM.ViewModel
         public MainViewModel()
         {
             HomeVM = new HomeViewModel();
-            DiscoveryVM = new DiscoveryViewModel();
+            MovVM = new MovViewModel();
+            XchgVM = new XchgViewModel();
 
             CurrentView = HomeVM;
 
@@ -36,9 +41,14 @@ namespace _8086_Emulator.MVM.ViewModel
                 CurrentView = HomeVM;
             });
 
-            DiscoveryViewCommand = new RelayCommand(o =>
+            MovViewCommand = new RelayCommand(o =>
             {
-                CurrentView = DiscoveryVM;
+                CurrentView = MovVM;
+            });
+
+            XchgViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = XchgVM;
             });
 
         }

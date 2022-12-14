@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_8086_Emulator"
         xmlns:viewModel="clr-namespace:_8086_Emulator.MVM.ViewModel"
+        
         mc:Ignorable="d"
         Height="600" Width="920"
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
-        AllowsTransparency="True">
+        AllowsTransparency="True" WindowStartupLocation="CenterScreen">
 
 
     <Window.DataContext>
@@ -47,14 +48,21 @@
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}"/>
 
-                <RadioButton Content="Discovery"
+                <RadioButton Content="Mov"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding DiscoveryViewCommand}"/>
+                             Command="{Binding MovViewCommand}"/>
 
-                <RadioButton Content="Featured"
+                <RadioButton Content="Xchg"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding XchgViewCommand}"/>
+                
+                <RadioButton Content="Inc"
                              Height="50"
                              Foreground="White"
                              FontSize="14"

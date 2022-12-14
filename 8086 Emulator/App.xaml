@@ -16,8 +16,12 @@
                 <view:HomeView/>
             </DataTemplate>
 
-            <DataTemplate DataType="{x:Type viewModel:DiscoveryViewModel}">
-                <view:DiscoveryView/>
+            <DataTemplate DataType="{x:Type viewModel:MovViewModel}">
+                <view:MovView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:XchgViewModel}">
+                <view:XchgView/>
             </DataTemplate>
 
         </ResourceDictionary>

@@ -16,9 +16,9 @@ using System.Windows.Shapes;
 namespace _8086_Emulator.MVM.View
 {
     /// <summary>
-    /// Interaction logic for DiscoveryView.xaml
+    /// Interaction logic for MovView.xaml
     /// </summary>
-    public partial class DiscoveryView : UserControl
+    public partial class MovView : UserControl
     {
         /*public int AX = 1;
         public int BX = 2;
@@ -32,7 +32,7 @@ namespace _8086_Emulator.MVM.View
         public string toNazwa;
         public int[] tab = new int[4] { 1, 2, 3, 4 };
         public string[] nazwy = new string[4] { "ax", "bx", "cx", "dx" };
-        public DiscoveryView()
+        public MovView()
         {
             InitializeComponent();
         }

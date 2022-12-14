@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _8086_Emulator.MVM.ViewModel
 {
-    internal class DiscoveryViewModel
+    internal class MovViewModel
     {
     }
 }
