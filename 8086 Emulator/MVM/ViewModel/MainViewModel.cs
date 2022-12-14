@@ -10,11 +10,13 @@ namespace _8086_Emulator.MVM.ViewModel
         public RelayCommand MovViewCommand { get; set; }
 
         public RelayCommand XchgViewCommand { get; set; }
+        public RelayCommand IncViewCommand { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
         public MovViewModel MovVM { get; set; }
 
         public XchgViewModel XchgVM { get; set; }
+        public IncViewModel IncVM { get; set; }
         
         private object _currentView;
 
@@ -33,6 +35,7 @@ namespace _8086_Emulator.MVM.ViewModel
             HomeVM = new HomeViewModel();
             MovVM = new MovViewModel();
             XchgVM = new XchgViewModel();
+            IncVM = new IncViewModel();
 
             CurrentView = HomeVM;
 
@@ -49,6 +52,11 @@ namespace _8086_Emulator.MVM.ViewModel
             XchgViewCommand = new RelayCommand(o =>
             {
                 CurrentView = XchgVM;
+            });
+
+            IncViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = IncVM;
             });
 
         }

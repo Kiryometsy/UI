@@ -24,6 +24,10 @@
                 <view:XchgView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:IncViewModel}">
+                <view:IncView/>
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

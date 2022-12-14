@@ -13,4 +13,19 @@
     <Folder Include="MVM\Model\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="MVM\View\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVM\View\IncView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVM\View\MovView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVM\View\XchgView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
 </Project>
